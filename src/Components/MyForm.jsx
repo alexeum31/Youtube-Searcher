@@ -43,7 +43,7 @@ class MyForm extends React.Component {
             type="range"
             id="myRange"
             min="0"
-            max="10"
+            max="15"
             step="1"
             onChange={this.handleRangeChange}
           />

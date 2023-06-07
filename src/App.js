@@ -1,7 +1,7 @@
 import './App.css';
 import Title from './Title.jsx';
-import MyForm from './MyForm.jsx'
-
+import MyForm from './Components/MyForm.jsx';
+import Searcher from './Components/Searcher.jsx'
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
       <header className="App-header">
         <Title></Title>
         <MyForm></MyForm>
+        <Searcher />
       </header>
     </div>
   );
