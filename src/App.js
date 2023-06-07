@@ -1,6 +1,6 @@
 import './App.css';
 import Title from './Title.jsx';
-import Form from './Form.jsx'
+import MyForm from './MyForm.jsx'
 
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Title></Title>
-        <Form></Form>
+        <MyForm></MyForm>
       </header>
     </div>
   );
