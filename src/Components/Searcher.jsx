@@ -1,3 +1,4 @@
+import YouTube from "react-youtube";
 import React, { useState } from "react";
 import axios from "axios";
 
@@ -9,7 +10,7 @@ export default function VideoSearch() {
     setSearchQuery(event.target.value);
   };
 
-  const handleSearch = (event) => {
+  const handleSearch = (event, ) => {
     event.preventDefault();
 
     axios
@@ -19,7 +20,7 @@ export default function VideoSearch() {
           maxResults: 10,
           q: searchQuery,
           type: "video",
-          key: "AIzaSyAcMvEOYRIp3hrE46ZoeH2vwEOAsgc8CLo",
+          key: "AIzaSyCBx94MMAzs5dT_U_vI8XTIAVjTvrUtJj4",
         },
       })
       .then((response) => {
@@ -56,4 +57,3 @@ export default function VideoSearch() {
     </div>
   );
 }
-
