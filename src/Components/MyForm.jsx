@@ -2,11 +2,12 @@ import "bootstrap/dist/css/bootstrap.css";
 import YouTube from "react-youtube";
 import React, { useState } from "react";
 import axios from "axios";
+import './VideoList.css';
 
 const MyForm = () => {
   const [videos, setVideos] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
-  const [amount, setAmount] = useState(0);
+  const [amount, setAmount] = useState(15);
 
   const handleInputChange = (event) => {
     setSearchQuery(event.target.value);
@@ -70,18 +71,15 @@ const MyForm = () => {
       </form>
       <ul>
         {videos.map((video) => (
-          <li key={video.id.videoId}>
-            <h2>{video.snippet.title}</h2>
-            <p>{video.snippet.description}</p>
+          <div key={video.id.videoId}>
+            <h2 className="VideoTitle">{video.snippet.title}</h2>
+            <p className="VideoDesc">{video.snippet.description}</p>
             <iframe
-              width="560"
-              height="315"
               src={`https://www.youtube.com/embed/${video.id.videoId}`}
-              frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe>
-          </li>
+          </div>
         ))}
       </ul>
     </div>

@@ -1,0 +1,22 @@
+/* VideoList.css */
+
+.VideoList {
+    margin-top: 20px;
+}
+
+.VideoListItem {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.VideoTitle {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.VideoDesc {
+    font-size: 10px;
+    margin-bottom: 5px;
+}
